@@ -40,8 +40,8 @@ function init() {
         // How zoomed in you want the map to start at (always required)
         zoom: 15,
 
-        // The latitude and longitude to center the map (always required)
-        center: new google.maps.LatLng(55.6761, -12.5683), // New York
+      
+        center: {lat: 55.6761, lng: -12.5683}
 
         // Disables the default Google Maps UI components
         disableDefaultUI: true,
