@@ -169,7 +169,8 @@ function init() {
         icon: image
     });
 }
-
-// Google Maps Scripts
-// When the window has finished loading create our google map below
-google.maps.event.addDomListener(window, 'load', init);
+function initMap () {
+    // Google Maps Scripts
+    // When the window has finished loading create our google map below
+    google.maps.event.addDomListener(window, 'load', init);
+}
