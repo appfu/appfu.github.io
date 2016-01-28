@@ -29,10 +29,7 @@ $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
 
-// Google Maps Scripts
-// When the window has finished loading create our google map below
-google.maps.event.addDomListener(window, 'load', init);
-
+var map;
 function init() {
     // Basic options for a simple Google Map
     // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
@@ -162,7 +159,7 @@ function init() {
 
     var mapElement = document.getElementById('map');
 
-    var map = new google.maps.Map(mapElement, mapOptions);
+    map = new google.maps.Map(mapElement, mapOptions);
 
     var image = 'img/map-marker.png';
     var myLatLng = new google.maps.LatLng(55.6761, -12.5683);
@@ -172,3 +169,7 @@ function init() {
         icon: image
     });
 }
+
+// Google Maps Scripts
+// When the window has finished loading create our google map below
+google.maps.event.addDomListener(window, 'load', init);
