@@ -35,7 +35,7 @@ function init() {
     // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
     var mapOptions = {
         // How zoomed in you want the map to start at (always required)
-        zoom: 15,
+        zoom: 7,
 
       
         center: {lat: 55.6761, lng: -12.5683},
@@ -162,7 +162,7 @@ function init() {
     map = new google.maps.Map(mapElement, mapOptions);
 
     var image = 'img/map-marker.png';
-    var myLatLng = new google.maps.LatLng(55.6761, -12.5683);
+    var myLatLng = {lat: 55.6761, lng: -12.5683},
     var beachMarker = new google.maps.Marker({
         position: myLatLng,
         map: map,
