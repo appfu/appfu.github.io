@@ -41,7 +41,7 @@ function init() {
         zoom: 15,
 
       
-        center: {lat: 55.6761, lng: -12.5683}
+        center: {lat: 55.6761, lng: -12.5683},
 
         // Disables the default Google Maps UI components
         disableDefaultUI: true,
